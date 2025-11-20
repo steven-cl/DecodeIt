@@ -77,7 +77,7 @@ export default function U1Intro() {
                                 typingSpeed={40}
                                 loop={false}
                                 showCursor={false}
-                                className="bg-gradient-to-r from-[var(--color-dark-teal)] via-[var(--color-teal-2)] to-[var(--color-teal-3)] bg-clip-text text-transparent"
+                                className="text-black"
                             />
                         </h1>
                     </AnimatedContent>
@@ -118,7 +118,7 @@ export default function U1Intro() {
                         <SplitText 
                             text="Capas de la Arquitectura"
                             tag="h2"
-                            className="text-3xl font-bold text-[var(--color-dark-teal)]"
+                            className="text-3xl font-bold text-[var(--color-teal)]"
                             delay={50}
                             splitType="chars"
                         />
@@ -145,7 +145,7 @@ export default function U1Intro() {
                             <SplitText 
                                 text="1.1 Arquitectura y Organización de Computadoras"
                                 tag="h2"
-                                className="text-4xl font-bold text-[var(--color-dark-teal)]"
+                                className="text-4xl font-bold text-[var(--color-teal)]"
                                 delay={30}
                                 splitType="chars"
                                 textAlign="left"
@@ -209,16 +209,16 @@ export default function U1Intro() {
                                         <h4 className="text-lg font-semibold text-[var(--color-teal-2)] mb-2 flex items-center gap-2">
                                             <span className="text-2xl">🎯</span> Ejemplo Simple
                                         </h4>
-                                        <p className="mb-2"><strong className="text-[var(--color-dark-teal)]">Arquitectura:</strong> <em>Qué hace la computadora</em> (ejecutar un programa)</p>
-                                        <p><strong className="text-[var(--color-dark-teal)]">Organización:</strong> <em>Cómo lo hace</em> (qué componentes usa y cómo se conectan)</p>
+                                        <p className="mb-2"><strong className="text-[var(--color-teal)]">Arquitectura:</strong> <em>Qué hace la computadora</em> (ejecutar un programa)</p>
+                                        <p><strong className="text-[var(--color-teal)]">Organización:</strong> <em>Cómo lo hace</em> (qué componentes usa y cómo se conectan)</p>
                                     </div>
                                     <Separator orientation="vertical" className="hidden md:block bg-[var(--color-teal-3)]/30" />
                                     <div className="flex-1">
                                         <h4 className="text-lg font-semibold text-[var(--color-teal-2)] mb-2 flex items-center gap-2">
                                             <span className="text-2xl">📋</span> Enfoques
                                         </h4>
-                                        <p className="mb-2"><strong className="text-[var(--color-dark-teal)]">Funcional:</strong> Se centra en las funciones (procesar, almacenar, mover datos, controlar)</p>
-                                        <p><strong className="text-[var(--color-dark-teal)]">Estructural:</strong> Se centra en las partes físicas y su interconexión (CPU, memoria, E/S)</p>
+                                        <p className="mb-2"><strong className="text-[var(--color-teal)]">Funcional:</strong> Se centra en las funciones (procesar, almacenar, mover datos, controlar)</p>
+                                        <p><strong className="text-[var(--color-teal)]">Estructural:</strong> Se centra en las partes físicas y su interconexión (CPU, memoria, E/S)</p>
                                     </div>
                                 </div>
                             </InfoCard>
@@ -237,7 +237,7 @@ export default function U1Intro() {
                             </div>
                             <BlurText 
                                 text="1.2 Evolución de las Computadoras"
-                                className="text-4xl font-bold text-[var(--color-dark-teal)]"
+                                className="text-4xl font-bold text-[var(--color-teal)]"
                                 delay={30}
                                 animateBy="words"
                             />
@@ -252,19 +252,19 @@ export default function U1Intro() {
                                     <div className="grid md:grid-cols-2 gap-4">
                                         <div className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-orange)]/20 to-[var(--color-orange)]/10 border border-[var(--color-orange)]/30 shadow-md">
                                             <Zap className="w-5 h-5 text-[var(--color-orange)] flex-shrink-0" />
-                                            <span className="text-[var(--color-dark-teal)] font-semibold">Reducción de tamaño</span>
+                                            <span className="text-white font-semibold">Reducción de tamaño</span>
                                         </div>
                                         <div className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-teal-2)]/20 to-[var(--color-teal-3)]/10 border border-[var(--color-teal-3)]/30 shadow-md">
                                             <Zap className="w-5 h-5 text-[var(--color-teal-2)] flex-shrink-0" />
-                                            <span className="text-[var(--color-dark-teal)] font-semibold">Aumento de velocidad y capacidad</span>
+                                            <span className="text-white font-semibold">Aumento de velocidad y capacidad</span>
                                         </div>
                                         <div className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-orange)]/20 to-[var(--color-orange)]/10 border border-[var(--color-orange)]/30 shadow-md">
                                             <Zap className="w-5 h-5 text-[var(--color-orange)] flex-shrink-0" />
-                                            <span className="text-[var(--color-dark-teal)] font-semibold">Disminución de costos</span>
+                                            <span className="text-white font-semibold">Disminución de costos</span>
                                         </div>
                                         <div className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-teal-2)]/20 to-[var(--color-teal-3)]/10 border border-[var(--color-teal-3)]/30 shadow-md">
                                             <Zap className="w-5 h-5 text-[var(--color-teal-2)] flex-shrink-0" />
-                                            <span className="text-[var(--color-dark-teal)] font-semibold">Mayor eficiencia energética</span>
+                                            <span className="text-white font-semibold">Mayor eficiencia energética</span>
                                         </div>
                                     </div>
                                 </InfoCard>
@@ -283,13 +283,13 @@ export default function U1Intro() {
                                         splitType="words"
                                     />
                                 </div>
-                                <div className="h-[700px] rounded-2xl border border-[var(--color-teal-3)]/30 overflow-hidden bg-gradient-to-b from-background to-[var(--color-teal-3)]/5">
+                                <div className="h-[500px] rounded-2xl border border-[var(--color-teal-3)]/30 overflow-hidden bg-gradient-to-b from-background to-[var(--color-teal-3)]/5">
                                     <ScrollStack 
-                                        itemDistance={160}
+                                        itemDistance={150}
                                         itemScale={0.06}
-                                        itemStackDistance={35}
-                                        stackPosition="20%"
-                                        baseScale={0.85}
+                                        itemStackDistance={5}
+                                        stackPosition="10%"
+                                        baseScale={0.65}
                                         className="h-full"
                                     >
                                         <ScrollStackItem>
@@ -359,7 +359,7 @@ export default function U1Intro() {
                                             </div>
                                         </ScrollStackItem>
                                         <ScrollStackItem>
-                                            <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-teal-3)]/90 to-[var(--color-dark-teal)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
+                                            <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-teal-3)]/90 to-[var(--color-teal)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
                                                         <Cpu className="w-8 h-8 text-white" />
@@ -441,7 +441,7 @@ export default function U1Intro() {
                                                             </p>
                                                         </div>
                                                         <div>
-                                                            <h4 className="font-semibold text-[var(--color-dark-teal)] mb-3 flex items-center gap-2">
+                                                            <h4 className="font-semibold text-[var(--color-orange)] mb-3 flex items-center gap-2">
                                                                 <Sparkles className="w-5 h-5 text-[var(--color-orange)]" />
                                                                 Características principales:
                                                             </h4>
@@ -486,7 +486,7 @@ export default function U1Intro() {
                                                             </p>
                                                         </div>
                                                         <div>
-                                                            <h4 className="font-semibold text-[var(--color-dark-teal)] mb-3 flex items-center gap-2">
+                                                            <h4 className="font-semibold text-[var(--color-teal-3)] mb-3 flex items-center gap-2">
                                                                 <Sparkles className="w-5 h-5 text-[var(--color-teal-2)]" />
                                                                 Características principales:
                                                             </h4>
@@ -531,7 +531,7 @@ export default function U1Intro() {
                                                             </p>
                                                         </div>
                                                         <div>
-                                                            <h4 className="font-semibold text-[var(--color-dark-teal)] mb-3 flex items-center gap-2">
+                                                            <h4 className="font-semibold text-[var(--color-teal-3)] mb-3 flex items-center gap-2">
                                                                 <Sparkles className="w-5 h-5 text-[var(--color-teal-3)]" />
                                                                 Características principales:
                                                             </h4>
@@ -555,10 +555,10 @@ export default function U1Intro() {
                                     </SpotlightCard>
 
                                     <SpotlightCard spotlightColor="rgba(0, 186, 180, 0.3)">
-                                        <AccordionItem value="gen4" className="border-[var(--color-dark-teal)]/30 rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-dark-teal)]/5 to-transparent">
+                                        <AccordionItem value="gen4" className="border-[var(--color-teal)]/30 rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-teal)]/5 to-transparent">
                                             <AccordionTrigger className="text-lg hover:text-[var(--color-teal-3)] px-6 py-4 text-white">
                                                 <div className="flex items-center gap-3">
-                                                    <span className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-dark-teal)] to-[var(--color-teal-1)] text-white text-lg font-bold border-2 border-[var(--color-dark-teal)]/50 shadow-lg">4</span>
+                                                    <span className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-teal)] to-[var(--color-teal-1)] text-white text-lg font-bold border-2 border-[var(--color-teal)]/50 shadow-lg">4</span>
                                                     <span className="font-bold">Cuarta Generación: Microprocesadores (1980-actualidad)</span>
                                                 </div>
                                             </AccordionTrigger>
@@ -576,8 +576,8 @@ export default function U1Intro() {
                                                             </p>
                                                         </div>
                                                         <div>
-                                                            <h4 className="font-semibold text-[var(--color-dark-teal)] mb-3 flex items-center gap-2">
-                                                                <Sparkles className="w-5 h-5 text-[var(--color-dark-teal)]" />
+                                                            <h4 className="font-semibold text-[var(--color-teal-3)] mb-3 flex items-center gap-2">
+                                                                <Sparkles className="w-5 h-5 text-[var(--color-teal)]" />
                                                                 Características principales:
                                                             </h4>
                                                             <AnimatedList 
@@ -588,7 +588,7 @@ export default function U1Intro() {
                                                                     '🚀 Velocidad: Miles de millones de operaciones por segundo'
                                                                 ]}
                                                                 className="h-auto"
-                                                                itemClassName="bg-gradient-to-r from-[var(--color-dark-teal)]/10 to-transparent border border-[var(--color-dark-teal)]/20 rounded-lg p-3"
+                                                                itemClassName="bg-gradient-to-r from-[var(--color-teal)]/10 to-transparent border border-[var(--color-teal)]/20 rounded-lg p-3"
                                                                 showGradients={false}
                                                                 enableArrowNavigation={false}
                                                             />
@@ -600,7 +600,7 @@ export default function U1Intro() {
                                     </SpotlightCard>
 
                                     <SpotlightCard spotlightColor="rgba(255, 89, 0, 0.35)">
-                                        <AccordionItem value="gen5" className="border-[var(--color-orange)]/30 rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-orange)]/5 to-[var(--color-teal-3)]/5">
+                                        <AccordionItem value="gen5" className="border-[var(--color-orange)] rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-orange)]/5 to-[var(--color-teal-3)]/5">
                                             <AccordionTrigger className="text-lg hover:text-[var(--color-orange)] px-6 py-4 text-white">
                                                 <div className="flex items-center gap-3">
                                                     <span className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-orange)] to-[var(--color-teal-3)] text-white text-lg font-bold border-2 border-[var(--color-orange)]/50 shadow-lg">5</span>
@@ -621,7 +621,7 @@ export default function U1Intro() {
                                                             </p>
                                                         </div>
                                                         <div>
-                                                            <h4 className="font-semibold text-[var(--color-dark-teal)] mb-3 flex items-center gap-2">
+                                                            <h4 className="font-semibold text-[var(--color-orange)] mb-3 flex items-center gap-2">
                                                                 <Brain className="w-5 h-5 text-[var(--color-orange)]" />
                                                                 Características principales:
                                                             </h4>
@@ -661,7 +661,7 @@ export default function U1Intro() {
                             <SplitText 
                                 text="1.3 Máquina Secuencial de Programa Almacenado"
                                 tag="h2"
-                                className="text-4xl font-bold text-[var(--color-dark-teal)]"
+                                className="text-4xl font-bold text-[var(--color-teal)]"
                                 delay={25}
                                 splitType="chars"
                                 textAlign="left"
@@ -694,17 +694,17 @@ export default function U1Intro() {
                                             Las instrucciones y los datos se almacenan en la <strong className="text-[var(--color-teal-2)]">misma memoria</strong>.
                                         </p>
                                         <div className="p-4 rounded-lg bg-gradient-to-br from-muted/70 to-muted/30 border border-border/30">
-                                            <p className="text-sm mb-2 font-semibold text-[var(--color-dark-teal)]">Ventajas:</p>
+                                            <p className="text-sm mb-2 font-semibold text-[var(--color-teal)]">Ventajas:</p>
                                             <ul className="space-y-1 text-sm">
-                                                <li className="flex items-start gap-2">
+                                                <li className="flex items-start gap-2 text-black">
                                                     <ChevronRight className="w-3 h-3 mt-0.5 text-[var(--color-teal-2)] flex-shrink-0" />
                                                     <span>La computadora puede modificar sus propias instrucciones</span>
                                                 </li>
-                                                <li className="flex items-start gap-2">
+                                                <li className="flex items-start gap-2 text-black">
                                                     <ChevronRight className="w-3 h-3 mt-0.5 text-[var(--color-teal-2)] flex-shrink-0" />
                                                     <span>Ejecuta diferentes tareas sin cambios físicos</span>
                                                 </li>
-                                                <li className="flex items-start gap-2">
+                                                <li className="flex items-start gap-2 text-black">
                                                     <ChevronRight className="w-3 h-3 mt-0.5 text-[var(--color-teal-2)] flex-shrink-0" />
                                                     <span>Flexibilidad y programabilidad total</span>
                                                 </li>
@@ -721,17 +721,17 @@ export default function U1Intro() {
                                             La computadora ejecuta las instrucciones <strong className="text-[var(--color-orange)]">una tras otra</strong>, en orden.
                                         </p>
                                         <div className="p-4 rounded-lg bg-gradient-to-br from-muted/70 to-muted/30 border border-border/30">
-                                            <p className="text-sm mb-2 font-semibold text-[var(--color-dark-teal)]">Características:</p>
+                                            <p className="text-sm mb-2 font-semibold text-[var(--color-teal)]">Características:</p>
                                             <ul className="space-y-1 text-sm">
-                                                <li className="flex items-start gap-2">
+                                                <li className="flex items-start gap-2 text-black">
                                                     <ChevronRight className="w-3 h-3 mt-0.5 text-[var(--color-orange)] flex-shrink-0" />
                                                     <span>Controlada por una unidad de control o secuenciador</span>
                                                 </li>
-                                                <li className="flex items-start gap-2">
+                                                <li className="flex items-start gap-2 text-black">
                                                     <ChevronRight className="w-3 h-3 mt-0.5 text-[var(--color-orange)] flex-shrink-0" />
                                                     <span>Ciclo: buscar → decodificar → ejecutar</span>
                                                 </li>
-                                                <li className="flex items-start gap-2">
+                                                <li className="flex items-start gap-2 text-black">
                                                     <ChevronRight className="w-3 h-3 mt-0.5 text-[var(--color-orange)] flex-shrink-0" />
                                                     <span>Operación predecible y determinista</span>
                                                 </li>
@@ -744,7 +744,7 @@ export default function U1Intro() {
 
                         <AnimatedContent direction="vertical" distance={40} delay={0.25}>
                             <div className="rounded-2xl border border-border/50 bg-card/30 backdrop-blur-sm p-6">
-                                <h3 className="text-2xl font-semibold mb-4 text-[var(--color-dark-teal)]">Unidades Funcionales Necesarias</h3>
+                                <h3 className="text-2xl font-semibold mb-4 text-[var(--color-teal)]">Unidades Funcionales Necesarias</h3>
                                 <p className="text-muted-foreground mb-6">
                                     Actualización del modelo de Babbage para computadoras modernas:
                                 </p>
@@ -752,35 +752,35 @@ export default function U1Intro() {
                             <div className="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/20">
                                 <div className="flex items-center gap-3 mb-2">
                                     <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-[var(--color-teal-2)] font-bold">1</div>
-                                    <h4 className="font-semibold text-[var(--color-dark-teal)]">Unidad de Cálculo (ALU)</h4>
+                                    <h4 className="font-semibold text-[var(--color-teal)]">Unidad de Cálculo (ALU)</h4>
                                 </div>
                                 <p className="text-sm text-muted-foreground">Realiza operaciones aritméticas y lógicas</p>
                             </div>
                             <div className="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/20">
                                 <div className="flex items-center gap-3 mb-2">
                                     <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-[var(--color-teal-2)] font-bold">2</div>
-                                    <h4 className="font-semibold text-[var(--color-dark-teal)]">Memoria</h4>
+                                    <h4 className="font-semibold text-[var(--color-teal)]">Memoria</h4>
                                 </div>
                                 <p className="text-sm text-muted-foreground">Almacena programas y datos</p>
                             </div>
                             <div className="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/20">
                                 <div className="flex items-center gap-3 mb-2">
                                     <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-[var(--color-teal-2)] font-bold">3</div>
-                                    <h4 className="font-semibold text-[var(--color-dark-teal)]">Unidad de Control</h4>
+                                    <h4 className="font-semibold text-[var(--color-teal)]">Unidad de Control</h4>
                                 </div>
                                 <p className="text-sm text-muted-foreground">Dirige el flujo de datos y ejecución</p>
                             </div>
                             <div className="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/20">
                                 <div className="flex items-center gap-3 mb-2">
                                     <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-[var(--color-teal-2)] font-bold">4</div>
-                                    <h4 className="font-semibold text-[var(--color-dark-teal)]">Entrada</h4>
+                                    <h4 className="font-semibold text-[var(--color-teal)]">Entrada</h4>
                                 </div>
                                 <p className="text-sm text-muted-foreground">Permite ingresar datos y programas</p>
                             </div>
                             <div className="p-4 rounded-xl bg-gradient-to-br from-primary/10 to-transparent border border-primary/20">
                                 <div className="flex items-center gap-3 mb-2">
                                     <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-[var(--color-teal-2)] font-bold">5</div>
-                                    <h4 className="font-semibold text-[var(--color-dark-teal)]">Salida</h4>
+                                    <h4 className="font-semibold text-[var(--color-teal)]">Salida</h4>
                                 </div>
                                 <p className="text-sm text-muted-foreground">Muestra o envía los resultados</p>
                             </div>
@@ -801,7 +801,7 @@ export default function U1Intro() {
                 </div>
                 <BlurText 
                     text="1.4 Organización de la Computadora"
-                    className="text-4xl font-bold text-[var(--color-dark-teal)]"
+                    className="text-4xl font-bold text-[var(--color-teal)]"
                     delay={30}
                     animateBy="words"
                 />
@@ -820,24 +820,24 @@ export default function U1Intro() {
                 {/* Enfoque Funcional */}
                 <AnimatedContent direction="horizontal" distance={60} delay={0.1}>
                     <SpotlightCard className="h-full" spotlightColor="rgba(0, 186, 180, 0.3)">
-                        <div className="rounded-2xl border border-[var(--color-teal-3)]/30 bg-gradient-to-br from-card/50 to-[var(--color-teal-3)]/5 backdrop-blur-sm p-6 h-full">
+                        <div className="rounded-2xl border border-[var(--color-teal-3)]/30 bg-gradient-to-br from-card/50 to-[var(--color-teal-3)]/5 backdrop-blur-sm p-6 h-full text-white">
                             <div className="flex items-center gap-3 mb-6">
                                 <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[var(--color-teal-2)] to-[var(--color-teal-3)] flex items-center justify-center">
                                     <Activity className="w-5 h-5 text-white" />
                                         </div>
-                                        <h3 className="text-2xl font-semibold text-[var(--color-dark-teal)]">Enfoque Funcional</h3>
+                                        <h3 className="text-2xl font-semibold text-black">Enfoque Funcional</h3>
                                     </div>
-                                    <p className="text-muted-foreground mb-4">
-                                        Se centra en <strong className="text-[var(--color-teal-2)]">qué hace la computadora</strong>:
+                                    <p className="text-muted-foreground mb-4 text-white">
+                                        Se centra en <strong className="text-[var(--color-teal-3)]">qué hace la computadora</strong>:
                                     </p>
                                     <div className="space-y-3">
                                         <div className="flex items-start gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-teal-2)]/10 to-transparent border border-[var(--color-teal-2)]/20 shadow-sm">
                                             <div className="w-6 h-6 rounded-full bg-gradient-to-br from-[var(--color-teal-2)] to-[var(--color-teal-3)] flex items-center justify-center flex-shrink-0 mt-0.5">
                                                 <span className="text-xs font-bold text-white">1</span>
                                             </div>
-                                            <div>
-                                                <p className="font-semibold text-[var(--color-dark-teal)]">Procesamiento de datos</p>
-                                                <p className="text-sm text-muted-foreground">Realizar cálculos y operaciones</p>
+                                            <div className="text-white">
+                                                <p className="font-semibold">Procesamiento de datos</p>
+                                                <p className="text-sm">Realizar cálculos y operaciones</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-teal-2)]/10 to-transparent border border-[var(--color-teal-2)]/20 shadow-sm">
@@ -845,8 +845,8 @@ export default function U1Intro() {
                                                 <span className="text-xs font-bold text-white">2</span>
                                             </div>
                                             <div>
-                                                <p className="font-semibold text-[var(--color-dark-teal)]">Almacenamiento de datos</p>
-                                                <p className="text-sm text-muted-foreground">Guardar información temporal o permanente</p>
+                                                <p className="font-semibold text-[var(--color-teal)]">Almacenamiento de datos</p>
+                                                <p className="text-sm ">Guardar información temporal o permanente</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-teal-2)]/10 to-transparent border border-[var(--color-teal-2)]/20 shadow-sm">
@@ -854,8 +854,8 @@ export default function U1Intro() {
                                                 <span className="text-xs font-bold text-white">3</span>
                                             </div>
                                             <div>
-                                                <p className="font-semibold text-[var(--color-dark-teal)]">Traslado de datos</p>
-                                                <p className="text-sm text-muted-foreground">Mover información entre componentes</p>
+                                                <p className="font-semibold text-[var(--color-teal)]">Traslado de datos</p>
+                                                <p className="text-sm ">Mover información entre componentes</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-teal-2)]/10 to-transparent border border-[var(--color-teal-2)]/20 shadow-sm">
@@ -863,8 +863,8 @@ export default function U1Intro() {
                                                 <span className="text-xs font-bold text-white">4</span>
                                             </div>
                                             <div>
-                                                <p className="font-semibold text-[var(--color-dark-teal)]">Operaciones de control</p>
-                                                <p className="text-sm text-muted-foreground">Gestionar y coordinar todas las actividades</p>
+                                                <p className="font-semibold text-[var(--color-teal)]">Operaciones de control</p>
+                                                <p className="text-sm ">Gestionar y coordinar todas las actividades</p>
                                             </div>
                                         </div>
                                     </div>
@@ -875,45 +875,45 @@ export default function U1Intro() {
                         {/* Enfoque Estructural */}
                         <AnimatedContent direction="horizontal" distance={60} delay={0.2} reverse={true}>
                             <SpotlightCard className="h-full" spotlightColor="rgba(255, 89, 0, 0.3)">
-                                <div className="rounded-2xl border border-[var(--color-orange)]/30 bg-gradient-to-br from-card/50 to-[var(--color-orange)]/5 backdrop-blur-sm p-6 h-full">
+                                <div className="rounded-2xl border border-[var(--color-orange)]/30 bg-gradient-to-br from-card/50 to-[var(--color-orange)]/5 backdrop-blur-sm p-6 h-full text-white">
                                     <div className="flex items-center gap-3 mb-6">
                                         <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[var(--color-orange)] to-[var(--color-orange)]/70 flex items-center justify-center">
                                             <Layers className="w-5 h-5 text-white" />
                                         </div>
-                                        <h3 className="text-2xl font-semibold text-[var(--color-dark-teal)]">Enfoque Estructural</h3>
+                                        <h3 className="text-2xl font-semibold text-black">Enfoque Estructural</h3>
                                     </div>
-                                    <p className="text-muted-foreground mb-4">
+                                    <p className=" mb-4">
                                         Se centra en <strong className="text-[var(--color-orange)]">cómo está construida</strong>:
                                     </p>
                                     <div className="space-y-3">
                                         <div className="flex items-start gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-orange)]/10 to-transparent border border-[var(--color-orange)]/20 shadow-sm">
                                             <Cpu className="w-5 h-5 text-[var(--color-orange)] flex-shrink-0 mt-1" />
                                             <div>
-                                                <p className="font-semibold text-[var(--color-dark-teal)]">Procesador (CPU)</p>
-                                                <p className="text-sm text-muted-foreground">El cerebro de la computadora, ejecuta instrucciones</p>
+                                                <p className="font-semibold text-[var(--color-teal)]">Procesador (CPU)</p>
+                                                <p className="text-sm ">El cerebro de la computadora, ejecuta instrucciones</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-orange)]/10 to-transparent border border-[var(--color-orange)]/20 shadow-sm">
                                             <Database className="w-5 h-5 text-[var(--color-orange)] flex-shrink-0 mt-1" />
                                             <div>
-                                                <p className="font-semibold text-[var(--color-dark-teal)]">Memoria</p>
-                                                <p className="text-sm text-muted-foreground">Almacena datos y programas (RAM, ROM, caché)</p>
+                                                <p className="font-semibold text-[var(--color-teal)]">Memoria</p>
+                                                <p className="text-sm ">Almacena datos y programas (RAM, ROM, caché)</p>
                                             </div>
                                         </div>
                                         <div className="flex items-start gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-orange)]/10 to-transparent border border-[var(--color-orange)]/20 shadow-sm">
                                             <Server className="w-5 h-5 text-[var(--color-orange)] flex-shrink-0 mt-1" />
                                             <div>
-                                                <p className="font-semibold text-[var(--color-dark-teal)]">Entrada/Salida (E/S)</p>
-                                                <p className="text-sm text-muted-foreground">Permite la comunicación con el exterior</p>
+                                                <p className="font-semibold text-[var(--color-teal)]">Entrada/Salida (E/S)</p>
+                                                <p className="text-sm ">Permite la comunicación con el exterior</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="mt-6 p-4 rounded-lg bg-gradient-to-br from-[var(--color-orange)]/10 to-transparent border border-[var(--color-orange)]/20">
-                                        <p className="text-sm font-semibold text-[var(--color-dark-teal)] mb-2">📐 Esquema básico:</p>
-                                        <div className="font-mono text-sm text-muted-foreground text-center py-2">
+                                        <p className="text-sm font-semibold text-[var(--color-teal)] mb-2">📐 Esquema básico:</p>
+                                        <div className="font-mono text-sm  text-center py-2">
                                             CPU ↔ Memoria ↔ Dispositivos de E/S
                                         </div>
-                                        <p className="text-xs text-muted-foreground mt-2">
+                                        <p className="text-xs  mt-2">
                                             La CPU se comunica con la memoria y los dispositivos de E/S para ejecutar programas
                                         </p>
                                     </div>
@@ -936,7 +936,7 @@ export default function U1Intro() {
                         <SplitText 
                             text="Información Adicional Importante"
                             tag="h2"
-                            className="text-4xl font-bold text-[var(--color-dark-teal)]"
+                            className="text-4xl font-bold text-[var(--color-teal)]"
                             delay={35}
                         splitType="words"
                         textAlign="left"
@@ -947,13 +947,13 @@ export default function U1Intro() {
                     <AnimatedContent direction="vertical" distance={40} delay={0.1}>
                         <SpotlightCard spotlightColor="rgba(0, 186, 180, 0.25)">
                             <InfoCard className="bg-gradient-to-br from-[var(--color-teal-3)]/15 to-[var(--color-teal-2)]/5 border-[var(--color-teal-3)]/30">
-                                <h3 className="text-xl font-semibold text-[var(--color-dark-teal)] mb-3 flex items-center gap-2">
+                                <h3 className="text-xl font-semibold text-[var(--color-teal-3)] mb-3 flex items-center gap-2">
                                     🏗️ Arquitectura von Neumann vs. Harvard
                                 </h3>
                                 <div className="grid md:grid-cols-2 gap-4">
                                     <div className="p-4 rounded-lg bg-gradient-to-br from-[var(--color-teal-2)]/20 to-transparent border border-[var(--color-teal-2)]/30 shadow-md">
-                                        <h4 className="font-semibold text-[var(--color-dark-teal)] mb-2 flex items-center gap-2">
-                                            <CircuitBoard className="w-5 h-5 text-[var(--color-teal-2)]" />
+                                        <h4 className="font-semibold text-[var(--color-teal-3)] mb-2 flex items-center gap-2">
+                                            <CircuitBoard className="w-5 h-5 text-[var(--color-teal-3)]" />
                                                 Von Neumann
                                             </h4>
                                             <p className="text-sm mb-2 text-white">Usa una <strong className="text-[var(--color-teal-2)]">sola memoria</strong> para instrucciones y datos.</p>
@@ -969,7 +969,7 @@ export default function U1Intro() {
                                             </ul>
                                         </div>
                                         <div className="p-4 rounded-lg bg-gradient-to-br from-[var(--color-orange)]/20 to-transparent border border-[var(--color-orange)]/30 shadow-md">
-                                            <h4 className="font-semibold text-[var(--color-dark-teal)] mb-2 flex items-center gap-2">
+                                            <h4 className="font-semibold text-[var(--color-orange)] mb-2 flex items-center gap-2">
                                                 <Microchip className="w-5 h-5 text-[var(--color-orange)]" />
                                                 Harvard
                                             </h4>
@@ -1000,21 +1000,21 @@ export default function U1Intro() {
                                         <div className="p-4 rounded-lg bg-gradient-to-br from-[var(--color-teal-2)]/15 to-transparent border border-[var(--color-teal-2)]/30 shadow-md">
                                             <div className="flex items-center gap-2 mb-2">
                                                 <Cpu className="w-6 h-6 text-[var(--color-teal-2)]" />
-                                                <h4 className="font-semibold text-[var(--color-dark-teal)]">ALU</h4>
+                                                <h4 className="font-semibold text-[var(--color-teal-3)]">ALU</h4>
                                             </div>
                                             <p className="text-sm text-white">Unidad Aritmético-Lógica que realiza cálculos</p>
                                         </div>
                                         <div className="p-4 rounded-lg bg-gradient-to-br from-[var(--color-orange)]/15 to-transparent border border-[var(--color-orange)]/30 shadow-md">
                                             <div className="flex items-center gap-2 mb-2">
                                                 <Workflow className="w-6 h-6 text-[var(--color-orange)]" />
-                                                <h4 className="font-semibold text-[var(--color-dark-teal)]">UC</h4>
+                                                <h4 className="font-semibold text-[var(--color-orange)]">UC</h4>
                                             </div>
                                             <p className="text-sm text-white">Unidad de Control que dirige las operaciones</p>
                                         </div>
                                         <div className="p-4 rounded-lg bg-gradient-to-br from-[var(--color-teal-3)]/15 to-transparent border border-[var(--color-teal-3)]/30 shadow-md">
                                             <div className="flex items-center gap-2 mb-2">
                                                 <Database className="w-6 h-6 text-[var(--color-teal-3)]" />
-                                                <h4 className="font-semibold text-[var(--color-dark-teal)]">Registros</h4>
+                                                <h4 className="font-semibold text-[var(--color-teal-3)]">Registros</h4>
                                             </div>
                                             <p className="text-sm text-white">Pequeñas memorias rápidas dentro de la CPU</p>
                                         </div>
@@ -1047,7 +1047,7 @@ export default function U1Intro() {
                                 <SplitText 
                                     text="¿Listo para profundizar más?"
                                     tag="h3"
-                                    className="text-3xl font-bold text-[var(--color-dark-teal)] mb-4"
+                                    className="text-3xl font-bold text-[var(--color-teal)] mb-4"
                                     delay={50}
                                     splitType="words"
                                 />
