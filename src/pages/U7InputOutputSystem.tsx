@@ -254,15 +254,15 @@ export default function U7InputOutputSystem() {
 
                 <Separator className="my-12 bg-[var(--color-teal-3)]/20" />
 
-                {/* Section 1.2: Evolución */}
+                {/* Section 7.2: Arquitectura de Buses */}
                 <AnimatedContent direction="vertical" distance={60}>
-                    <SectionContainer id="evolucion">
+                    <SectionContainer id="arquitectura-buses">
                         <div className="flex items-center gap-3 mb-8">
                             <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-[var(--color-orange)] to-[var(--color-orange)]/70 text-white border-2 border-[var(--color-orange)]/30 shadow-lg">
-                                <Activity className="w-6 h-6" />
+                                <Cable className="w-6 h-6" />
                             </div>
                             <BlurText 
-                                text="1.2 Evolución de las Computadoras"
+                                text="7.2 Arquitectura de Buses"
                                 className="text-4xl font-bold text-[var(--color-teal)]"
                                 delay={30}
                                 animateBy="words"
@@ -272,37 +272,50 @@ export default function U7InputOutputSystem() {
                         <AnimatedContent direction="vertical" distance={40} delay={0.1}>
                             <SpotlightCard className="mb-8" spotlightColor="rgba(0, 186, 180, 0.25)">
                                 <InfoCard className="bg-gradient-to-br from-[var(--color-teal-3)]/20 to-[var(--color-teal-2)]/10 border-[var(--color-teal-3)]/30">
+                                    <h3 className="text-xl font-semibold text-[var(--color-teal-2)] mb-3">Estructura Típica del Sistema</h3>
                                     <p className="text-base mb-4 text-white">
-                                        A lo largo de la historia, las computadoras han evolucionado desde máquinas mecánicas como la de Babbage hasta los modernos sistemas digitales. Esta evolución ha estado marcada por:
+                                        Los buses conectan todos los componentes del sistema, permitiendo la transferencia de datos, direcciones y señales de control.
                                     </p>
-                                    <div className="grid md:grid-cols-2 gap-4">
+                                    <div className="p-4 rounded-lg bg-gradient-to-br from-muted/70 to-muted/30 border border-border/30">
+                                        <pre className="text-sm text-black font-mono overflow-x-auto whitespace-pre">
+{`CPU ←→ Bus del Sistema ←→ Memoria
+              ↓
+      Controlador de E/S ←→ Bus de Expansión ←→ Periféricos`}
+                                        </pre>
+                                    </div>
+                                    <div className="grid md:grid-cols-3 gap-4 mt-4">
                                         <div className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-orange)]/20 to-[var(--color-orange)]/10 border border-[var(--color-orange)]/30 shadow-md">
-                                            <Zap className="w-5 h-5 text-[var(--color-orange)] flex-shrink-0" />
-                                            <span className="text-white font-semibold">Reducción de tamaño</span>
+                                            <Binary className="w-5 h-5 text-[var(--color-orange)] flex-shrink-0" />
+                                            <div>
+                                                <p className="text-white font-semibold text-sm">Serial vs Paralelo</p>
+                                                <p className="text-white/70 text-xs">Tipo de transmisión</p>
+                                            </div>
                                         </div>
                                         <div className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-teal-2)]/20 to-[var(--color-teal-3)]/10 border border-[var(--color-teal-3)]/30 shadow-md">
-                                            <Zap className="w-5 h-5 text-[var(--color-teal-2)] flex-shrink-0" />
-                                            <span className="text-white font-semibold">Aumento de velocidad y capacidad</span>
-                                        </div>
-                                        <div className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-orange)]/20 to-[var(--color-orange)]/10 border border-[var(--color-orange)]/30 shadow-md">
-                                            <Zap className="w-5 h-5 text-[var(--color-orange)] flex-shrink-0" />
-                                            <span className="text-white font-semibold">Disminución de costos</span>
+                                            <Clock className="w-5 h-5 text-[var(--color-teal-2)] flex-shrink-0" />
+                                            <div>
+                                                <p className="text-white font-semibold text-sm">Síncrono vs Asíncrono</p>
+                                                <p className="text-white/70 text-xs">Temporización</p>
+                                            </div>
                                         </div>
                                         <div className="flex items-center gap-3 p-3 rounded-lg bg-gradient-to-r from-[var(--color-teal-2)]/20 to-[var(--color-teal-3)]/10 border border-[var(--color-teal-3)]/30 shadow-md">
-                                            <Zap className="w-5 h-5 text-[var(--color-teal-2)] flex-shrink-0" />
-                                            <span className="text-white font-semibold">Mayor eficiencia energética</span>
+                                            <GitBranch className="w-5 h-5 text-[var(--color-teal-2)] flex-shrink-0" />
+                                            <div>
+                                                <p className="text-white font-semibold text-sm">Arbitraje</p>
+                                                <p className="text-white/70 text-xs">Control de acceso</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </InfoCard>
                             </SpotlightCard>
                         </AnimatedContent>
 
-                        {/* ScrollStack - Evolution Timeline */}
+                        {/* ScrollStack - Communication Techniques Timeline */}
                         <AnimatedContent direction="vertical" distance={40} delay={0.15}>
                             <div className="mb-12">
                                 <div className="text-center mb-6">
                                     <SplitText 
-                                        text="Línea de Tiempo de la Evolución"
+                                        text="Evolución de las Técnicas de Comunicación"
                                         tag="h3"
                                         className="text-2xl font-semibold text-[var(--color-teal-2)]"
                                         delay={40}
@@ -322,54 +335,59 @@ export default function U7InputOutputSystem() {
                                             <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-orange)]/90 to-[var(--color-orange)]/70 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
-                                                        <Clock className="w-8 h-8 text-white" />
+                                                        <Timer className="w-8 h-8 text-white" />
                                                     </div>
                                                     <div>
-                                                        <h4 className="text-3xl font-bold text-white">1940-1955</h4>
-                                                        <p className="text-white/90 text-lg">Primera Generación</p>
+                                                        <h4 className="text-3xl font-bold text-white">E/S Programada</h4>
+                                                        <p className="text-white/90 text-lg">Polling</p>
                                                     </div>
                                                 </div>
-                                                <div className="relative h-40 mb-3 rounded-lg overflow-hidden">
-                                                    <img 
-                                                        src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format" 
-                                                        alt="ENIAC Computer"
-                                                        className="w-full h-full object-cover"
-                                                    />
+                                                <div className="p-4 rounded-lg bg-white/10 border border-white/20 mb-4">
+                                                    <p className="text-white font-semibold mb-2">Proceso:</p>
+                                                    <ol className="text-white/90 text-sm space-y-1 list-decimal list-inside">
+                                                        <li>CPU consulta "¿listo?"</li>
+                                                        <li>Dispositivo responde estado</li>
+                                                        <li>Si listo, transfiere dato</li>
+                                                        <li>Repite continuamente...</li>
+                                                    </ol>
                                                 </div>
-                                                <p className="text-white text-lg font-semibold">Válvulas de Vacío</p>
-                                                <p className="text-white/90">Las primeras computadoras masivas que ocupaban salas completas</p>
+                                                <p className="text-white text-lg font-semibold">Simple pero Ineficiente</p>
+                                                <p className="text-white/90">❌ CPU desperdicia tiempo esperando</p>
                                             </div>
                                         </ScrollStackItem>
                                         <ScrollStackItem>
                                             <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-teal-2)]/90 to-[var(--color-teal-3)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
-                                                        <Microchip className="w-8 h-8 text-white" />
+                                                        <Signal className="w-8 h-8 text-white" />
                                                     </div>
                                                     <div>
-                                                        <h4 className="text-3xl font-bold text-white">1955-1965</h4>
-                                                        <p className="text-white/90 text-lg">Segunda Generación</p>
+                                                        <h4 className="text-3xl font-bold text-white">Interrupciones</h4>
+                                                        <p className="text-white/90 text-lg">⭐ MÁS EFICIENTE</p>
                                                     </div>
                                                 </div>
-                                                <div className="relative h-40 mb-3 rounded-lg overflow-hidden">
-                                                    <img 
-                                                        src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=800&auto=format" 
-                                                        alt="Transistor Technology"
-                                                        className="w-full h-full object-cover"
-                                                    />
+                                                <div className="p-4 rounded-lg bg-white/10 border border-white/20 mb-4">
+                                                    <p className="text-white font-semibold mb-2">Mecanismo:</p>
+                                                    <ol className="text-white/90 text-sm space-y-1 list-decimal list-inside">
+                                                        <li>Dispositivo activa línea IRQ</li>
+                                                        <li>CPU termina instrucción actual</li>
+                                                        <li>Salva estado (registros, PC)</li>
+                                                        <li>Ejecuta ISR</li>
+                                                        <li>Restaura estado y continúa</li>
+                                                    </ol>
                                                 </div>
-                                                <p className="text-white text-lg font-semibold">Transistores</p>
-                                                <p className="text-white/90">Computadoras más pequeñas, rápidas y confiables</p>
+                                                <p className="text-white text-lg font-semibold">Dispositivo Notifica</p>
+                                                <p className="text-white/90">✅ CPU libre para otras tareas</p>
                                             </div>
                                         </ScrollStackItem>
                                         <ScrollStackItem>
-                                            <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-orange)]/80 to-[var(--color-teal-1)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
+                                            <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-teal-3)]/90 to-[var(--color-teal)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
-                                                        <CircuitBoard className="w-8 h-8 text-white" />
+                                                        <Zap className="w-8 h-8 text-white" />
                                                     </div>
                                                     <div>
-                                                        <h4 className="text-3xl font-bold text-white">1965-1980</h4>
+                                                        <h4 className="text-3xl font-bold text-white">DMA</h4>
                                                         <p className="text-white/90 text-lg">Tercera Generación</p>
                                                     </div>
                                                 </div>
@@ -392,40 +410,21 @@ export default function U7InputOutputSystem() {
                                                     </div>
                                                     <div>
                                                         <h4 className="text-3xl font-bold text-white">1980-Actualidad</h4>
-                                                        <p className="text-white/90 text-lg">Cuarta Generación</p>
+                                                        <p className="text-white/90 text-lg">⭐ MÁS RÁPIDO</p>
                                                     </div>
                                                 </div>
-                                                <div className="relative h-40 mb-3 rounded-lg overflow-hidden">
-                                                    <img 
-                                                        src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format" 
-                                                        alt="Modern CPUs"
-                                                        className="w-full h-full object-cover"
-                                                    />
+                                                <div className="p-4 rounded-lg bg-white/10 border border-white/20 mb-4">
+                                                    <p className="text-white font-semibold mb-2">Proceso DMA:</p>
+                                                    <ol className="text-white/90 text-sm space-y-1 list-decimal list-inside">
+                                                        <li>CPU configura parámetros</li>
+                                                        <li>Dispositivo pide transferencia</li>
+                                                        <li>DMA obtiene bus (HOLD/HLDA)</li>
+                                                        <li>Datos van directo a memoria</li>
+                                                        <li>DMA notifica con interrupción</li>
+                                                    </ol>
                                                 </div>
-                                                <p className="text-white text-lg font-semibold">Microprocesadores</p>
-                                                <p className="text-white/90">CPU completa en un solo chip - Era de las PCs</p>
-                                            </div>
-                                        </ScrollStackItem>
-                                        <ScrollStackItem>
-                                            <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-orange)]/95 to-[var(--color-teal-3)]/85 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
-                                                <div className="flex items-center gap-4 mb-6">
-                                                    <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
-                                                        <Brain className="w-8 h-8 text-white" />
-                                                    </div>
-                                                    <div>
-                                                        <h4 className="text-3xl font-bold text-white">En Desarrollo</h4>
-                                                        <p className="text-white/90 text-lg">Quinta Generación</p>
-                                                    </div>
-                                                </div>
-                                                <div className="relative h-40 mb-3 rounded-lg overflow-hidden">
-                                                    <img 
-                                                        src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=800&auto=format" 
-                                                        alt="AI and Quantum Computing"
-                                                        className="w-full h-full object-cover"
-                                                    />
-                                                </div>
-                                                <p className="text-white text-lg font-semibold">IA y Computación Cuántica</p>
-                                                <p className="text-white/90">El futuro de la computación</p>
+                                                <p className="text-white text-lg font-semibold">Transferencia Directa</p>
+                                                <p className="text-white/90">🚀 Libera CPU completamente</p>
                                             </div>
                                         </ScrollStackItem>
                                     </ScrollStack>
