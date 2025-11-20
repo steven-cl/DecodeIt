@@ -257,7 +257,7 @@ function Home() {
                                     distance={40} 
                                     delay={0.1 + index * 0.1}
                                 >
-                                    <Link to={topic.link}>
+                                    <Link to={topic.link} className="group">
                                         <SpotlightCard 
                                             className="h-full cursor-pointer"
                                             spotlightColor={topic.color === 'orange' ? "rgba(255, 89, 0, 0.3)" : "rgba(0, 186, 180, 0.3)"}
