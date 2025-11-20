@@ -3,12 +3,12 @@ import { Facebook, Twitter, Instagram, Github } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-700 text-white pt-4 pb-4">
+        <footer className="relative overflow-hidden bg-gradient-to-br from-[var(--color-orange)]/10 via-[var(--color-teal-2)]/15 to-[var(--color-teal-3)]/10 px-8 py-20 text-black">
 
             {/* Company Info */}
             <div className="mt-8 text-center px-4">
-                <h3 className="text-lg md:text-xl font-bold text-[var(--tech-blue)]">Decode It</h3>
-                <p className="text-sm text-gray-200 mt-1">
+                <h3 className="text-lg md:text-xl font-bold">Decode It</h3>
+                <p className="text-sm mt-1">
                     Aprende con nosotros - Los mejores en computadoras
                 </p>
             </div>
@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom */}
-            <div className="border-t border-blue-200 mt-8 pt-3 pb-2 text-center text-xs md:text-sm px-4 text-gray-300">
+            <div className="border-t border-blue-200 mt-8 pt-3 pb-2 text-center text-xs md:text-sm px-4">
                 © {new Date().getFullYear()} Decode It. Todos los derechos reservados.
             </div>
         </footer>
