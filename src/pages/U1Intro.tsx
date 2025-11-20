@@ -13,6 +13,7 @@ import Stack from '@/components/Stack';
 import ScrollStack, { ScrollStackItem } from '@/components/ScrollStack';
 import AnimatedList from '@/components/AnimatedList';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 
 export default function U1Intro() {
     // Carousel items with computer architecture images
@@ -90,18 +91,7 @@ export default function U1Intro() {
                             />
                         </div>
                     </AnimatedContent>
-                    <AnimatedContent direction="vertical" distance={40} delay={1.2}>
-                        <div className="flex justify-center gap-4 mt-8">
-                            <Button size="lg" className="bg-[var(--color-orange)] hover:bg-[var(--color-orange)]/90 text-white">
-                                <BookOpen className="w-5 h-5" />
-                                Comenzar a Aprender
-                            </Button>
-                            <Button size="lg" variant="outline">
-                                <ArrowRight className="w-5 h-5" />
-                                Ver Contenido
-                            </Button>
-                        </div>
-                    </AnimatedContent>
+
                 </div>
             </div>
 
@@ -166,21 +156,21 @@ export default function U1Intro() {
                             <AnimatedContent direction="horizontal" distance={60} delay={0.1}>
                                 <SpotlightCard className="h-full" spotlightColor="rgba(0, 186, 180, 0.3)">
                                     <InfoCard title="Arquitectura" icon={<Cpu className="w-5 h-5" />}>
-                                        <p className="mb-3">
+                                        <p className="mb-3 text-white">
                                             Se refiere a los <strong className="text-[var(--color-teal-2)]">atributos visibles para el programador</strong>, es decir, cómo se presenta la computadora desde el punto de vista del software.
                                         </p>
                                         <ul className="space-y-2 list-none">
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 mt-1 text-[var(--color-orange)] flex-shrink-0" />
-                                                <span>Conjunto de instrucciones</span>
+                                                <span className="text-white">Conjunto de instrucciones</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 mt-1 text-[var(--color-orange)] flex-shrink-0" />
-                                                <span>Tipos de datos</span>
+                                                <span className="text-white">Tipos de datos</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 mt-1 text-[var(--color-orange)] flex-shrink-0" />
-                                                <span>Modos de direccionamiento de memoria</span>
+                                                <span className="text-white">Modos de direccionamiento de memoria</span>
                                             </li>
                                         </ul>
                                     </InfoCard>
@@ -190,21 +180,21 @@ export default function U1Intro() {
                             <AnimatedContent direction="horizontal" distance={60} delay={0.2} reverse={true}>
                                 <SpotlightCard className="h-full" spotlightColor="rgba(255, 89, 0, 0.3)">
                                     <InfoCard title="Organización" icon={<Server className="w-5 h-5" />}>
-                                        <p className="mb-3">
+                                        <p className="mb-3 text-white">
                                             Se trata de la <strong className="text-[var(--color-teal-2)]">implementación física</strong> de la arquitectura. Define cómo se construye y opera realmente el hardware.
                                         </p>
                                         <ul className="space-y-2 list-none">
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 mt-1 text-[var(--color-orange)] flex-shrink-0" />
-                                                <span>Componentes hardware específicos</span>
+                                                <span className="text-white">Componentes hardware específicos</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 mt-1 text-[var(--color-orange)] flex-shrink-0" />
-                                                <span>Interconexión entre componentes</span>
+                                                <span className="text-white">Interconexión entre componentes</span>
                                             </li>
                                             <li className="flex items-start gap-2">
                                                 <ChevronRight className="w-4 h-4 mt-1 text-[var(--color-orange)] flex-shrink-0" />
-                                                <span>Señales de control y timing</span>
+                                                <span className="text-white">Señales de control y timing</span>
                                             </li>
                                         </ul>
                                     </InfoCard>
@@ -256,7 +246,7 @@ export default function U1Intro() {
                         <AnimatedContent direction="vertical" distance={40} delay={0.1}>
                             <SpotlightCard className="mb-8" spotlightColor="rgba(0, 186, 180, 0.25)">
                                 <InfoCard className="bg-gradient-to-br from-[var(--color-teal-3)]/20 to-[var(--color-teal-2)]/10 border-[var(--color-teal-3)]/30">
-                                    <p className="text-base mb-4">
+                                    <p className="text-base mb-4 text-white">
                                         A lo largo de la historia, las computadoras han evolucionado desde máquinas mecánicas como la de Babbage hasta los modernos sistemas digitales. Esta evolución ha estado marcada por:
                                     </p>
                                     <div className="grid md:grid-cols-2 gap-4">
@@ -293,17 +283,17 @@ export default function U1Intro() {
                                         splitType="words"
                                     />
                                 </div>
-                                <div className="h-[600px] rounded-2xl border border-[var(--color-teal-3)]/30 overflow-hidden bg-gradient-to-b from-background to-[var(--color-teal-3)]/5">
+                                <div className="h-[700px] rounded-2xl border border-[var(--color-teal-3)]/30 overflow-hidden bg-gradient-to-b from-background to-[var(--color-teal-3)]/5">
                                     <ScrollStack 
-                                        itemDistance={150}
-                                        itemScale={0.05}
-                                        itemStackDistance={40}
+                                        itemDistance={160}
+                                        itemScale={0.06}
+                                        itemStackDistance={35}
                                         stackPosition="20%"
-                                        baseScale={0.9}
+                                        baseScale={0.85}
                                         className="h-full"
                                     >
                                         <ScrollStackItem>
-                                            <div className="h-[400px] rounded-xl bg-gradient-to-br from-[var(--color-orange)]/90 to-[var(--color-orange)]/70 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
+                                            <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-orange)]/90 to-[var(--color-orange)]/70 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
                                                         <Clock className="w-8 h-8 text-white" />
@@ -313,7 +303,7 @@ export default function U1Intro() {
                                                         <p className="text-white/90 text-lg">Primera Generación</p>
                                                     </div>
                                                 </div>
-                                                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                                                <div className="relative h-40 mb-3 rounded-lg overflow-hidden">
                                                     <img 
                                                         src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format" 
                                                         alt="ENIAC Computer"
@@ -325,7 +315,7 @@ export default function U1Intro() {
                                             </div>
                                         </ScrollStackItem>
                                         <ScrollStackItem>
-                                            <div className="h-[400px] rounded-xl bg-gradient-to-br from-[var(--color-teal-2)]/90 to-[var(--color-teal-3)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
+                                            <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-teal-2)]/90 to-[var(--color-teal-3)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
                                                         <Microchip className="w-8 h-8 text-white" />
@@ -335,7 +325,7 @@ export default function U1Intro() {
                                                         <p className="text-white/90 text-lg">Segunda Generación</p>
                                                     </div>
                                                 </div>
-                                                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                                                <div className="relative h-40 mb-3 rounded-lg overflow-hidden">
                                                     <img 
                                                         src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=800&auto=format" 
                                                         alt="Transistor Technology"
@@ -347,7 +337,7 @@ export default function U1Intro() {
                                             </div>
                                         </ScrollStackItem>
                                         <ScrollStackItem>
-                                            <div className="h-[400px] rounded-xl bg-gradient-to-br from-[var(--color-orange)]/80 to-[var(--color-teal-1)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
+                                            <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-orange)]/80 to-[var(--color-teal-1)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
                                                         <CircuitBoard className="w-8 h-8 text-white" />
@@ -357,7 +347,7 @@ export default function U1Intro() {
                                                         <p className="text-white/90 text-lg">Tercera Generación</p>
                                                     </div>
                                                 </div>
-                                                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                                                <div className="relative h-40 mb-3 rounded-lg overflow-hidden">
                                                     <img 
                                                         src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=800&auto=format" 
                                                         alt="Integrated Circuits"
@@ -369,7 +359,7 @@ export default function U1Intro() {
                                             </div>
                                         </ScrollStackItem>
                                         <ScrollStackItem>
-                                            <div className="h-[400px] rounded-xl bg-gradient-to-br from-[var(--color-teal-3)]/90 to-[var(--color-dark-teal)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
+                                            <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-teal-3)]/90 to-[var(--color-dark-teal)]/80 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
                                                         <Cpu className="w-8 h-8 text-white" />
@@ -379,7 +369,7 @@ export default function U1Intro() {
                                                         <p className="text-white/90 text-lg">Cuarta Generación</p>
                                                     </div>
                                                 </div>
-                                                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                                                <div className="relative h-40 mb-3 rounded-lg overflow-hidden">
                                                     <img 
                                                         src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format" 
                                                         alt="Modern CPUs"
@@ -391,7 +381,7 @@ export default function U1Intro() {
                                             </div>
                                         </ScrollStackItem>
                                         <ScrollStackItem>
-                                            <div className="h-[400px] rounded-xl bg-gradient-to-br from-[var(--color-orange)]/95 to-[var(--color-teal-3)]/85 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
+                                            <div className="h-[350px] rounded-xl bg-gradient-to-br from-[var(--color-orange)]/95 to-[var(--color-teal-3)]/85 p-8 shadow-2xl backdrop-blur-sm border border-white/20">
                                                 <div className="flex items-center gap-4 mb-6">
                                                     <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm border-2 border-white/40">
                                                         <Brain className="w-8 h-8 text-white" />
@@ -401,7 +391,7 @@ export default function U1Intro() {
                                                         <p className="text-white/90 text-lg">Quinta Generación</p>
                                                     </div>
                                                 </div>
-                                                <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
+                                                <div className="relative h-40 mb-3 rounded-lg overflow-hidden">
                                                     <img 
                                                         src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=800&auto=format" 
                                                         alt="AI and Quantum Computing"
@@ -431,7 +421,7 @@ export default function U1Intro() {
                                 <Accordion type="single" collapsible className="w-full space-y-4">
                                     <SpotlightCard spotlightColor="rgba(255, 89, 0, 0.3)">
                                         <AccordionItem value="gen1" className="border-[var(--color-orange)]/30 rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-orange)]/5 to-transparent">
-                                            <AccordionTrigger className="text-lg hover:text-[var(--color-orange)] px-6 py-4">
+                                            <AccordionTrigger className="text-lg hover:text-[var(--color-orange)] px-6 py-4 text-white">
                                                 <div className="flex items-center gap-3">
                                                     <span className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-orange)] to-[var(--color-orange)]/70 text-white text-lg font-bold border-2 border-[var(--color-orange)]/50 shadow-lg">1</span>
                                                     <span className="font-bold">Primera Generación: Válvulas de Vacío (1940-1955)</span>
@@ -446,7 +436,7 @@ export default function U1Intro() {
                                                                 alt="ENIAC - Primera Generación"
                                                                 className="w-full h-48 object-cover rounded-lg mb-4 shadow-lg"
                                                             />
-                                                            <p className="text-muted-foreground mb-4">
+                                                            <p className="text-white mb-4">
                                                                 Las primeras computadoras utilizaban <strong className="text-[var(--color-orange)]">válvulas de vacío</strong> para procesar información. Eran máquinas enormes que ocupaban habitaciones completas.
                                                             </p>
                                                         </div>
@@ -474,9 +464,9 @@ export default function U1Intro() {
                                         </AccordionItem>
                                     </SpotlightCard>
 
-                                    <SpotlightCard spotlightColor="rgba(0, 124, 120, 0.3)">
+                                    <SpotlightCard spotlightColor="rgba(0, 186, 180, 0.3)">
                                         <AccordionItem value="gen2" className="border-[var(--color-teal-2)]/30 rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-teal-2)]/5 to-transparent">
-                                            <AccordionTrigger className="text-lg hover:text-[var(--color-teal-2)] px-6 py-4">
+                                            <AccordionTrigger className="text-lg hover:text-[var(--color-teal-3)] px-6 py-4 text-white">
                                                 <div className="flex items-center gap-3">
                                                     <span className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-teal-2)] to-[var(--color-teal-3)] text-white text-lg font-bold border-2 border-[var(--color-teal-2)]/50 shadow-lg">2</span>
                                                     <span className="font-bold">Segunda Generación: Transistores (1955-1965)</span>
@@ -491,8 +481,8 @@ export default function U1Intro() {
                                                                 alt="Transistor Technology"
                                                                 className="w-full h-48 object-cover rounded-lg mb-4 shadow-lg"
                                                             />
-                                                            <p className="text-muted-foreground mb-4">
-                                                                Los <strong className="text-[var(--color-teal-2)]">transistores</strong> reemplazaron a las válvulas, permitiendo computadoras más pequeñas, rápidas y confiables.
+                                                            <p className="text-white mb-4">
+                                                                Los <strong className="text-[var(--color-teal-3)]">transistores</strong> reemplazaron a las válvulas, permitiendo computadoras más pequeñas, rápidas y confiables.
                                                             </p>
                                                         </div>
                                                         <div>
@@ -521,7 +511,7 @@ export default function U1Intro() {
 
                                     <SpotlightCard spotlightColor="rgba(0, 186, 180, 0.3)">
                                         <AccordionItem value="gen3" className="border-[var(--color-teal-3)]/30 rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-teal-3)]/5 to-transparent">
-                                            <AccordionTrigger className="text-lg hover:text-[var(--color-teal-3)] px-6 py-4">
+                                            <AccordionTrigger className="text-lg hover:text-[var(--color-teal-3)] px-6 py-4 text-white">
                                                 <div className="flex items-center gap-3">
                                                     <span className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-teal-3)] to-[var(--color-teal-2)] text-white text-lg font-bold border-2 border-[var(--color-teal-3)]/50 shadow-lg">3</span>
                                                     <span className="font-bold">Tercera Generación: Circuitos Integrados (1965-1980)</span>
@@ -536,7 +526,7 @@ export default function U1Intro() {
                                                                 alt="Integrated Circuits"
                                                                 className="w-full h-48 object-cover rounded-lg mb-4 shadow-lg"
                                                             />
-                                                            <p className="text-muted-foreground mb-4">
+                                                            <p className="text-white mb-4">
                                                                 Los <strong className="text-[var(--color-teal-3)]">circuitos integrados (chips)</strong> permitieron colocar miles de transistores en un solo chip de silicio.
                                                             </p>
                                                         </div>
@@ -564,9 +554,9 @@ export default function U1Intro() {
                                         </AccordionItem>
                                     </SpotlightCard>
 
-                                    <SpotlightCard spotlightColor="rgba(0, 51, 49, 0.5)">
+                                    <SpotlightCard spotlightColor="rgba(0, 186, 180, 0.3)">
                                         <AccordionItem value="gen4" className="border-[var(--color-dark-teal)]/30 rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-dark-teal)]/5 to-transparent">
-                                            <AccordionTrigger className="text-lg hover:text-[var(--color-dark-teal)] px-6 py-4">
+                                            <AccordionTrigger className="text-lg hover:text-[var(--color-teal-3)] px-6 py-4 text-white">
                                                 <div className="flex items-center gap-3">
                                                     <span className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-dark-teal)] to-[var(--color-teal-1)] text-white text-lg font-bold border-2 border-[var(--color-dark-teal)]/50 shadow-lg">4</span>
                                                     <span className="font-bold">Cuarta Generación: Microprocesadores (1980-actualidad)</span>
@@ -581,8 +571,8 @@ export default function U1Intro() {
                                                                 alt="Modern CPUs"
                                                                 className="w-full h-48 object-cover rounded-lg mb-4 shadow-lg"
                                                             />
-                                                            <p className="text-muted-foreground mb-4">
-                                                                La integración de toda la CPU en un solo chip: el <strong className="text-[var(--color-dark-teal)]">microprocesador</strong>. Nacimiento de las computadoras personales.
+                                                            <p className="text-white mb-4">
+                                                                La integración de toda la CPU en un solo chip: el <strong className="text-[var(--color-teal-3)]">microprocesador</strong>. Nacimiento de las computadoras personales.
                                                             </p>
                                                         </div>
                                                         <div>
@@ -611,7 +601,7 @@ export default function U1Intro() {
 
                                     <SpotlightCard spotlightColor="rgba(255, 89, 0, 0.35)">
                                         <AccordionItem value="gen5" className="border-[var(--color-orange)]/30 rounded-xl overflow-hidden bg-gradient-to-br from-[var(--color-orange)]/5 to-[var(--color-teal-3)]/5">
-                                            <AccordionTrigger className="text-lg hover:text-[var(--color-orange)] px-6 py-4">
+                                            <AccordionTrigger className="text-lg hover:text-[var(--color-orange)] px-6 py-4 text-white">
                                                 <div className="flex items-center gap-3">
                                                     <span className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-[var(--color-orange)] to-[var(--color-teal-3)] text-white text-lg font-bold border-2 border-[var(--color-orange)]/50 shadow-lg">5</span>
                                                     <span className="font-bold">Quinta Generación: IA y Computación Cuántica (en desarrollo)</span>
@@ -626,7 +616,7 @@ export default function U1Intro() {
                                                                 alt="AI and Quantum Computing"
                                                                 className="w-full h-48 object-cover rounded-lg mb-4 shadow-lg"
                                                             />
-                                                            <p className="text-muted-foreground mb-4">
+                                                            <p className="text-white mb-4">
                                                                 Computadoras basadas en <strong className="text-[var(--color-orange)]">inteligencia artificial</strong> y <strong className="text-[var(--color-teal-3)]">computación cuántica</strong> que prometen revolucionar el procesamiento de información.
                                                             </p>
                                                         </div>
@@ -687,7 +677,7 @@ export default function U1Intro() {
                                         </div>
                                         <div>
                                             <h3 className="text-xl font-semibold text-[var(--color-teal-2)] mb-2">Concepto Fundamental</h3>
-                                            <p className="text-base">
+                                            <p className="text-base text-white">
                                                 Este es un concepto revolucionario en la computación moderna, propuesto por <strong className="text-[var(--color-teal-2)]">John von Neumann</strong>, que sentó las bases de cómo funcionan las computadoras actuales.
                                             </p>
                                         </div>
@@ -700,7 +690,7 @@ export default function U1Intro() {
                             <AnimatedContent direction="horizontal" distance={60} delay={0.15}>
                                 <SpotlightCard className="h-full" spotlightColor="rgba(0, 124, 120, 0.3)">
                                     <InfoCard title="Programa Almacenado" icon={<Database className="w-5 h-5" />}>
-                                        <p className="mb-3">
+                                        <p className="mb-3 text-white">
                                             Las instrucciones y los datos se almacenan en la <strong className="text-[var(--color-teal-2)]">misma memoria</strong>.
                                         </p>
                                         <div className="p-4 rounded-lg bg-gradient-to-br from-muted/70 to-muted/30 border border-border/30">
@@ -727,7 +717,7 @@ export default function U1Intro() {
                             <AnimatedContent direction="horizontal" distance={60} delay={0.2} reverse={true}>
                                 <SpotlightCard className="h-full" spotlightColor="rgba(255, 89, 0, 0.3)">
                                     <InfoCard title="Máquina Secuencial" icon={<Workflow className="w-5 h-5" />}>
-                                        <p className="mb-3">
+                                        <p className="mb-3 text-white">
                                             La computadora ejecuta las instrucciones <strong className="text-[var(--color-orange)]">una tras otra</strong>, en orden.
                                         </p>
                                         <div className="p-4 rounded-lg bg-gradient-to-br from-muted/70 to-muted/30 border border-border/30">
@@ -820,7 +810,7 @@ export default function U1Intro() {
             <div className="text-center mb-8">
                 <BlurText 
                     text="La organización de la computadora se analiza desde dos perspectivas complementarias:"
-                    className="text-lg text-muted-foreground"
+                    className="text-lg text-white"
                     delay={20}
                     animateBy="words"
             />
@@ -966,15 +956,15 @@ export default function U1Intro() {
                                             <CircuitBoard className="w-5 h-5 text-[var(--color-teal-2)]" />
                                                 Von Neumann
                                             </h4>
-                                            <p className="text-sm mb-2">Usa una <strong className="text-[var(--color-teal-2)]">sola memoria</strong> para instrucciones y datos.</p>
+                                            <p className="text-sm mb-2 text-white">Usa una <strong className="text-[var(--color-teal-2)]">sola memoria</strong> para instrucciones y datos.</p>
                                             <ul className="text-sm space-y-1">
                                                 <li className="flex items-start gap-2">
                                                     <ChevronRight className="w-3 h-3 mt-0.5 text-[var(--color-teal-2)] flex-shrink-0" />
-                                                    <span>Más simple y flexible</span>
+                                                    <span className="text-white">Más simple y flexible</span>
                                                 </li>
                                                 <li className="flex items-start gap-2">
                                                     <ChevronRight className="w-3 h-3 mt-0.5 text-[var(--color-teal-2)] flex-shrink-0" />
-                                                    <span>Usado en PCs y servidores</span>
+                                                    <span className="text-white">Usado en PCs y servidores</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -983,15 +973,15 @@ export default function U1Intro() {
                                                 <Microchip className="w-5 h-5 text-[var(--color-orange)]" />
                                                 Harvard
                                             </h4>
-                                            <p className="text-sm mb-2">Usa <strong className="text-[var(--color-orange)]">memorias separadas</strong> para instrucciones y datos.</p>
+                                            <p className="text-sm mb-2 text-white">Usa <strong className="text-[var(--color-orange)]">memorias separadas</strong> para instrucciones y datos.</p>
                                             <ul className="text-sm space-y-1">
                                                 <li className="flex items-start gap-2">
                                                     <ChevronRight className="w-3 h-3 mt-0.5 text-[var(--color-orange)] flex-shrink-0" />
-                                                    <span>Más rápida y eficiente</span>
+                                                    <span className="text-white">Más rápida y eficiente</span>
                                                 </li>
                                                 <li className="flex items-start gap-2">
                                                     <ChevronRight className="w-3 h-3 mt-0.5 text-[var(--color-orange)] flex-shrink-0" />
-                                                    <span>Usado en microcontroladores</span>
+                                                    <span className="text-white">Usado en microcontroladores</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -1003,7 +993,7 @@ export default function U1Intro() {
                         <AnimatedContent direction="vertical" distance={40} delay={0.2}>
                             <SpotlightCard spotlightColor="rgba(255, 89, 0, 0.25)">
                                 <InfoCard className="bg-gradient-to-br from-[var(--color-orange)]/10 to-transparent border-[var(--color-orange)]/30">
-                                    <h3 className="text-xl font-semibold text-[var(--color-dark-teal)] mb-3 flex items-center gap-2">
+                                    <h3 className="text-xl font-semibold mb-3 flex items-center gap-2" style={{ color: '#FFA500' }}>
                                         ⚙️ Componentes clave de la CPU
                                     </h3>
                                     <div className="grid md:grid-cols-3 gap-4">
@@ -1012,21 +1002,21 @@ export default function U1Intro() {
                                                 <Cpu className="w-6 h-6 text-[var(--color-teal-2)]" />
                                                 <h4 className="font-semibold text-[var(--color-dark-teal)]">ALU</h4>
                                             </div>
-                                            <p className="text-sm text-muted-foreground">Unidad Aritmético-Lógica que realiza cálculos</p>
+                                            <p className="text-sm text-white">Unidad Aritmético-Lógica que realiza cálculos</p>
                                         </div>
                                         <div className="p-4 rounded-lg bg-gradient-to-br from-[var(--color-orange)]/15 to-transparent border border-[var(--color-orange)]/30 shadow-md">
                                             <div className="flex items-center gap-2 mb-2">
                                                 <Workflow className="w-6 h-6 text-[var(--color-orange)]" />
                                                 <h4 className="font-semibold text-[var(--color-dark-teal)]">UC</h4>
                                             </div>
-                                            <p className="text-sm text-muted-foreground">Unidad de Control que dirige las operaciones</p>
+                                            <p className="text-sm text-white">Unidad de Control que dirige las operaciones</p>
                                         </div>
                                         <div className="p-4 rounded-lg bg-gradient-to-br from-[var(--color-teal-3)]/15 to-transparent border border-[var(--color-teal-3)]/30 shadow-md">
                                             <div className="flex items-center gap-2 mb-2">
                                                 <Database className="w-6 h-6 text-[var(--color-teal-3)]" />
                                                 <h4 className="font-semibold text-[var(--color-dark-teal)]">Registros</h4>
                                             </div>
-                                            <p className="text-sm text-muted-foreground">Pequeñas memorias rápidas dentro de la CPU</p>
+                                            <p className="text-sm text-white">Pequeñas memorias rápidas dentro de la CPU</p>
                                         </div>
                                     </div>
                                 </InfoCard>
@@ -1042,7 +1032,7 @@ export default function U1Intro() {
                                         </div>
                                         <div>
                                             <h3 className="text-xl font-semibold text-[var(--color-teal-2)] mb-2">Importancia del concepto de "Programa Almacenado"</h3>
-                                            <p className="text-muted-foreground">
+                                            <p className="text-white">
                                                 Este concepto permitió que las computadoras fueran <strong className="text-[var(--color-teal-2)]">programables</strong>, lo que las hizo versátiles y sentó las bases del software moderno. Sin esta idea revolucionaria, las computadoras seguirían siendo máquinas especializadas que solo pueden realizar una tarea específica.
                                             </p>
                                         </div>
@@ -1065,18 +1055,12 @@ export default function U1Intro() {
                                     Continúa tu viaje de aprendizaje explorando los próximos temas de arquitectura de computadoras
                                 </p>
                                 <div className="flex justify-center gap-4 flex-wrap">
-                                    <Button size="lg" className="bg-gradient-to-r from-[var(--color-orange)] to-[var(--color-orange)]/80 hover:from-[var(--color-orange)]/90 hover:to-[var(--color-orange)]/70 text-white shadow-lg">
-                                        <ArrowRight className="w-5 h-5" />
-                                        Siguiente Unidad
-                                    </Button>
-                                    <Button size="lg" variant="outline" className="border-[var(--color-teal-2)] text-[var(--color-teal-2)] hover:bg-[var(--color-teal-2)]/10">
-                                        <BookOpen className="w-5 h-5" />
-                                        Ver Recursos
-                                    </Button>
-                                    <Button size="lg" variant="outline" className="border-[var(--color-teal-3)] text-[var(--color-teal-3)] hover:bg-[var(--color-teal-3)]/10">
-                                        <Sparkles className="w-5 h-5" />
-                                        Ejercicios Prácticos
-                                    </Button>
+                                    <Link to="/cpu_organization">
+                                        <Button size="lg" className="bg-gradient-to-r from-[var(--color-orange)] to-[var(--color-orange)]/80 hover:from-[var(--color-orange)]/90 hover:to-[var(--color-orange)]/70 text-white shadow-lg">
+                                            <ArrowRight className="w-5 h-5" />
+                                            Siguiente Unidad
+                                        </Button>
+                                    </Link>
                                 </div>
                             </div>
                         </AnimatedContent>
