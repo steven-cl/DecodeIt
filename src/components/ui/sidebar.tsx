@@ -4,6 +4,7 @@ import * as React from "react"
 import { Slot } from "@radix-ui/react-slot"
 import { cva, type VariantProps } from "class-variance-authority"
 import { Menu } from "lucide-react"
+import { Kbd, KbdGroup } from "@/components/ui/kbd";
 
 import { useIsMobile } from "@/hooks/use-mobile"
 import { cn } from "@/lib/utils"
@@ -27,7 +28,7 @@ import {
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
-const SIDEBAR_WIDTH = "16rem"
+const SIDEBAR_WIDTH = "19rem"
 const SIDEBAR_WIDTH_MOBILE = "20rem"
 const SIDEBAR_WIDTH_ICON = "5rem"
 const SIDEBAR_KEYBOARD_SHORTCUT = "b"
@@ -289,27 +290,47 @@ const SidebarTrigger = React.forwardRef<
   const left = isMobile
     ? "0.5rem"
     : isOpen
-      ? "calc(var(--sidebar-width) - 2.25rem)" // 1.75rem (w-7) + 0.5rem de margen
+      ? "calc(var(--sidebar-width) - 4rem)" // 1.75rem (w-7) + 0.5rem de margen
       : "0.5rem"
 
-  if(isMobile)
-    return (
-    <Button
-      ref={ref}
-      data-sidebar="trigger"
-      variant="ghost"
-      size="icon"
-      className={cn("fixed top-2 left-2 z-50 h-10 w-10", className)}
-      style={{ ...style, left }}
-      onClick={(event) => {
-        onClick?.(event)
-        toggleSidebar()
-      }}
-      {...props}
-    >
-      <Menu className="size-8"/>
-      <span className="sr-only">Toggle Sidebar</span>
-    </Button>
+  return (
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <Button
+          ref={ref}
+          data-sidebar="trigger"
+          variant="ghost"
+          size="icon"
+          className={cn(
+            "fixed top-3.5 left-2 z-50 h-10 w-10 transition-colors",
+            isOpen
+              ? "bg-white text-black hover:bg-white hover:text-black"
+              : "bg-black text-white hover:bg-black hover:text-white",
+            className
+          )}
+          style={{ ...style, left }}
+          onClick={(event) => {
+            onClick?.(event)
+            toggleSidebar()
+          }}
+          {...props}
+        >
+          <Menu className={cn("size-8", isOpen ? "text-black" : "text-white")} />
+          <span className="sr-only">Toggle Sidebar</span>
+        </Button>
+      </TooltipTrigger>
+      <TooltipContent>
+        <p>
+          Menú
+          {" "}
+          <KbdGroup className="inline-flex ml-2">
+            <Kbd>Ctrl</Kbd>
+            <span>+</span>
+            <Kbd>B</Kbd>
+          </KbdGroup>
+        </p>
+      </TooltipContent>
+    </Tooltip>
   )
 })
 SidebarTrigger.displayName = "SidebarTrigger"
@@ -643,7 +664,7 @@ const SidebarMenuAction = React.forwardRef<
         "peer-data-[size=lg]/menu-button:top-2.5",
         "group-data-[collapsible=icon]:hidden",
         showOnHover &&
-          "group-focus-within/menu-item:opacity-100 group-hover/menu-item:opacity-100 data-[state=open]:opacity-100 peer-data-[active=true]/menu-button:text-sidebar-accent-foreground md:opacity-0",
+        "group-focus-within/menu-item:opacity-100 group-hover/menu-item:opacity-100 data-[state=open]:opacity-100 peer-data-[active=true]/menu-button:text-sidebar-accent-foreground md:opacity-0",
         className
       )}
       {...props}
